@@ -48,7 +48,8 @@
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -57,7 +58,8 @@
 }
 
 @keyframes pulse-glow {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 20px rgba(250, 204, 20, 0.4);
   }
   50% {
@@ -75,11 +77,11 @@
 }
 
 :root {
-  --color-primary1: #FFEF5E;
-  --color-primary2: #EBBD45;
-  --color-primary3: #D69A00;
-  --color-primary4: #FACC14;
-  --color-primary5: #F0C310;
+  --color-primary1: #ffef5e;
+  --color-primary2: #ebbd45;
+  --color-primary3: #d69a00;
+  --color-primary4: #facc14;
+  --color-primary5: #f0c310;
   --color-primary6: #000000;
   --color-primary7: #fb923c;
   --color-primary8: #ffffff;
@@ -161,8 +163,13 @@
   body {
     @apply bg-background text-foreground;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-playfair);
   }
 }
@@ -170,56 +177,64 @@
 @layer components {
   .btn-primary {
     @apply bg-[var(--color-primary4)] hover:bg-[var(--color-primary5)] text-[var(--color-primary6)] font-bold px-8 py-4 rounded-xl transition-all duration-500 transform hover:scale-105 shadow-lg hover:shadow-2xl relative overflow-hidden;
-    background: linear-gradient(135deg, var(--color-primary4) 0%, var(--color-primary5) 100%);
+    background: linear-gradient(
+      135deg,
+      var(--color-primary4) 0%,
+      var(--color-primary5) 100%
+    );
   }
-  
+
   .btn-primary::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.3),
+      transparent
+    );
     transition: left 0.5s;
   }
-  
+
   .btn-primary:hover::before {
     left: 100%;
   }
-  
+
   .btn-secondary {
     @apply bg-transparent border-2 border-[var(--color-primary4)] hover:bg-[var(--color-primary4)] text-[var(--color-primary4)] hover:text-[var(--color-primary6)] font-bold px-8 py-4 rounded-xl transition-all duration-500 transform hover:scale-105 shadow-lg hover:shadow-2xl backdrop-blur-sm;
   }
-  
+
   .section-padding {
     @apply py-16 md:py-20 lg:py-24;
   }
-  
+
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
-  
+
   .heading-primary {
     @apply text-4xl md:text-6xl lg:text-7xl font-black text-[var(--color-primary6)] mb-8 leading-tight;
   }
-  
+
   .heading-secondary {
     @apply text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--color-primary6)] mb-12 leading-tight;
   }
-  
+
   .text-primary {
     @apply text-[var(--color-primary6)] text-xl leading-relaxed font-medium;
   }
 
-  
   .country-card {
     @apply relative overflow-hidden rounded-2xl shadow-xl transition-all duration-500 hover:shadow-2xl hover:scale-105;
   }
 }
 
 .country-card::before {
-  content: '';
+  content: "";
   @apply absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent z-10;
 }
 
@@ -283,22 +298,99 @@
 }
 
 .animate-shimmer {
-  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%);
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 100%
+  );
   background-size: 200% 100%;
   animation: shimmer 2s infinite;
 }
 
 /* Stagger Animation Delays */
-.animate-delay-100 { animation-delay: 0.1s; }
-.animate-delay-200 { animation-delay: 0.2s; }
-.animate-delay-300 { animation-delay: 0.3s; }
-.animate-delay-400 { animation-delay: 0.4s; }
-.animate-delay-500 { animation-delay: 0.5s; }
-.animate-delay-600 { animation-delay: 0.6s; }
+.animate-delay-100 {
+  animation-delay: 0.1s;
+}
+.animate-delay-200 {
+  animation-delay: 0.2s;
+}
+.animate-delay-300 {
+  animation-delay: 0.3s;
+}
+.animate-delay-400 {
+  animation-delay: 0.4s;
+}
+.animate-delay-500 {
+  animation-delay: 0.5s;
+}
+.animate-delay-600 {
+  animation-delay: 0.6s;
+}
 
 /* Gradient Text */
 .gradient-text {
-  background: linear-gradient(135deg, var(--color-primary4) 0%, var(--color-primary7) 50%, var(--color-primary1) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--color-primary4) 0%,
+    var(--color-primary7) 50%,
+    var(--color-primary1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Country Flag Gradients */
+.flag-eu {
+  background: linear-gradient(135deg, #003399 0%, #ffcc00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.flag-us {
+  background: linear-gradient(135deg, #b22234 0%, #ffffff 50%, #3c3b6e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.flag-gb {
+  background: linear-gradient(
+    135deg,
+    #012169 0%,
+    #ffffff 33%,
+    #c8102e 66%,
+    #012169 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.flag-ca {
+  background: linear-gradient(135deg, #ff0000 0%, #ffffff 50%, #ff0000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.flag-au {
+  background: linear-gradient(135deg, #012169 0%, #ffffff 50%, #e4002b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.flag-nz {
+  background: linear-gradient(
+    135deg,
+    #012169 0%,
+    #ffffff 33%,
+    #cc142b 66%,
+    #012169 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
