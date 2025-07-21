@@ -29,6 +29,7 @@ import iranBg from "@/images/iran_bg.png";
 import indonesiaBg from "@/images/indonesia_bg.png";
 import singaporeBg from "@/images/singapore_bg.png";
 import uzbekistanBg from "@/images/uzbekistan_bg.png";
+import heroImage from "@/images/hero_image.jpg";
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -134,8 +135,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-110 transition-transform duration-[10s] hover:scale-105"
           style={{
-            backgroundImage:
-              "url('https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg?auto=compress&cs=tinysrgb&w=1920')",
+            backgroundImage: `url('${heroImage.src}')`,
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/70"></div>
