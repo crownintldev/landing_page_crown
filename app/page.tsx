@@ -506,7 +506,12 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-16 animate-fade-in-up animate-delay-600">
-            <button className="btn-primary text-xl px-12 py-5 hover-glow">
+            <button
+              className="btn-primary text-xl px-12 py-5 hover-glow"
+              onClick={() =>
+                window.open("https://wa.me/crowninternationaltravels", "_blank")
+              }
+            >
               Get Details
             </button>
           </div>
