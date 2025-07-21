@@ -32,10 +32,10 @@ export default function FloatingButtons() {
           <MessageCircle className="w-7 h-7 group-hover:scale-110 transition-transform duration-300" />
 
           {/* Tooltip */}
-          <div className="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-3 py-2 rounded-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+          {/* <div className="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-3 py-2 rounded-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
             Chat on WhatsApp
             <div className="absolute left-full top-1/2 transform -translate-y-1/2 border-4 border-transparent border-l-gray-900"></div>
-          </div>
+          </div> */}
         </button>
       </div>
 
@@ -52,10 +52,10 @@ export default function FloatingButtons() {
           <Phone className="w-7 h-7 group-hover:scale-110 transition-transform duration-300" />
 
           {/* Tooltip */}
-          <div className="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-3 py-2 rounded-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+          {/* <div className="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-3 py-2 rounded-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
             Call Now: +92 51 111 143 111
             <div className="absolute right-full top-1/2 transform -translate-y-1/2 border-4 border-transparent border-r-gray-900"></div>
-          </div>
+          </div> */}
         </button>
       </div>
     </>
