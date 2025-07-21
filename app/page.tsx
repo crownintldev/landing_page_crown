@@ -15,6 +15,21 @@ import {
   Award,
 } from "lucide-react";
 
+import newzealandBg from "@/images/newzealand_bg.png";
+import schengenBg from "@/images/schengen_bg.png";
+import kenyaBg from "@/images/kenya_bg.png";
+import myanmarBg from "@/images/myanmar_bg.png";
+import rawandaBg from "@/images/rwand_bg.png";
+import vietnamBg from "@/images/vietnam_bg.png";
+import zimbabweBg from "@/images/zimbabwe_bg.png";
+import thailandBg from "@/images/thailand_bg.png";
+import tajikistanBg from "@/images/tajikistan_bg.png";
+import malaysiaBg from "@/images/malaysia_bg.png";
+import iranBg from "@/images/iran_bg.png";
+import indonesiaBg from "@/images/indonesia_bg.png";
+import singaporeBg from "@/images/singapore_bg.png";
+import uzbekistanBg from "@/images/uzbekistan_bg.png";
+
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -22,62 +37,52 @@ export default function Home() {
     {
       name: "Malaysia",
       capital: "Kuala Lumpur",
-      image:
-        "https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: malaysiaBg.src,
     },
     {
       name: "Thailand",
       capital: "Bangkok",
-      image:
-        "https://images.pexels.com/photos/1007426/pexels-photo-1007426.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: thailandBg.src,
     },
     {
       name: "Vietnam",
       capital: "Hanoi",
-      image:
-        "https://images.pexels.com/photos/1583339/pexels-photo-1583339.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: vietnamBg.src,
     },
     {
       name: "Indonesia",
       capital: "Jakarta",
-      image:
-        "https://images.pexels.com/photos/2507010/pexels-photo-2507010.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: indonesiaBg.src,
     },
     {
       name: "Iran",
       capital: "Tehran",
-      image:
-        "https://images.pexels.com/photos/3563625/pexels-photo-3563625.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: iranBg.src,
     },
     {
       name: "Tajikistan",
       capital: "Dushanbe",
-      image:
-        "https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: tajikistanBg.src,
     },
     {
       name: "Myanmar",
       capital: "Naypyidaw",
-      image:
-        "https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: myanmarBg.src,
     },
     {
       name: "Rwanda",
       capital: "Kigali",
-      image:
-        "https://images.pexels.com/photos/5273043/pexels-photo-5273043.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: rawandaBg.src,
     },
     {
       name: "Kenya",
       capital: "Nairobi",
-      image:
-        "https://images.pexels.com/photos/259447/pexels-photo-259447.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: kenyaBg.src,
     },
     {
       name: "Zimbabwe",
       capital: "Harare",
-      image:
-        "https://images.pexels.com/photos/4353813/pexels-photo-4353813.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: zimbabweBg.src,
     },
   ];
 
@@ -154,19 +159,17 @@ export default function Home() {
               <button
                 className="btn-primary text-lg px-10 py-5 hover-glow"
                 onClick={() =>
-                  window.open("https://www.crownintltravels.com", "_blank")
+                  window.open(
+                    "https://wa.me/crowninternationaltravels",
+                    "_blank"
+                  )
                 }
               >
                 Get Details
               </button>
               <button
                 className="btn-secondary text-lg px-10 py-5 hover-glow"
-                onClick={() =>
-                  window.open(
-                    "https://www.crownintltravels.com/contact",
-                    "_blank"
-                  )
-                }
+                onClick={() => (window.location.href = "tel:+923135000666")} // Replace with the actual phone number
               >
                 Contact Us
               </button>
@@ -192,7 +195,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center animate-fade-in-up">
             <div className="space-y-3 p-6 rounded-2xl glass-effect hover-glow transition-all duration-500 animate-scale-in animate-delay-100">
               <div className="text-5xl font-black text-[var(--color-primary6)] gradient-text">
-                20+
+                80+
               </div>
               <div className="text-sm font-semibold text-gray-700 uppercase tracking-wider">
                 Countries Served
@@ -216,7 +219,7 @@ export default function Home() {
             </div>
             <div className="space-y-3 p-6 rounded-2xl glass-effect hover-glow transition-all duration-500 animate-scale-in animate-delay-400">
               <div className="text-5xl font-black text-[var(--color-primary6)] gradient-text">
-                15+
+                20+
               </div>
               <div className="text-sm font-semibold text-gray-700 uppercase tracking-wider">
                 Years Experience
@@ -239,11 +242,9 @@ export default function Home() {
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="heading-secondary">
               We're Officially <span className="gradient-text">Authorised</span>{" "}
-              Visa Application Centre for:
+              Application Processing Centre for:
             </h2>
-            <p className="text-primary text-xl">
-              Trusted by governments worldwide to process visa applications
-            </p>
+            <p className="text-primary text-xl">Trusted Process Within Time</p>
           </div>
 
           {/* Desktop Carousel */}
@@ -337,7 +338,7 @@ export default function Home() {
             <button
               className="btn-primary text-xl px-12 py-5 hover-glow"
               onClick={() =>
-                window.open("https://www.crownintltravels.com", "_blank")
+                window.open("https://wa.me/crowninternationaltravels", "_blank")
               }
             >
               Get Details
@@ -350,14 +351,15 @@ export default function Home() {
         <div className="container-custom">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="heading-secondary">
-              We're Offering <span className="gradient-text">Visit Visa</span>:
+              Also Offering Authorised Services for{" "}
+              <span className="gradient-text">Visiting</span>:
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
             <div className="country-card group h-80 cursor-pointer hover-glow animate-fade-in-left animate-delay-200">
               <img
-                src="https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={singaporeBg.src}
                 alt="Singapore"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -378,7 +380,7 @@ export default function Home() {
 
             <div className="country-card group h-80 cursor-pointer hover-glow animate-fade-in-right animate-delay-300">
               <img
-                src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={uzbekistanBg.src}
                 alt="Tashkent"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -399,7 +401,12 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12 animate-fade-in-up animate-delay-400">
-            <button className="btn-primary text-xl px-12 py-5 hover-glow">
+            <button
+              className="btn-primary text-xl px-12 py-5 hover-glow"
+              onClick={() =>
+                window.open("https://wa.me/crowninternationaltravels", "_blank")
+              }
+            >
               Get Details
             </button>
           </div>
@@ -421,7 +428,7 @@ export default function Home() {
               <span className="gradient-text">File Processing</span> for:
             </h2>
             <p className="text-primary text-xl">
-              Expert handling of complex visa applications for premium
+              Expert handling of complex applications & files for premium
               destinations
             </p>
           </div>
@@ -432,8 +439,7 @@ export default function Home() {
                 name: "Schengen Countries",
                 flag: "EU",
                 flagClass: "flag-eu",
-                image:
-                  "https://images.pexels.com/photos/161901/paris-sunset-france-monument-161901.jpeg?auto=compress&cs=tinysrgb&w=400",
+                image: schengenBg.src,
               },
               {
                 name: "USA",
@@ -467,8 +473,7 @@ export default function Home() {
                 name: "New Zealand",
                 flag: "NZ",
                 flagClass: "flag-nz",
-                image:
-                  "https://images.pexels.com/photos/1006293/pexels-photo-1006293.jpeg?auto=compress&cs=tinysrgb&w=400",
+                image: newzealandBg.src,
               },
             ].map((country, index) => (
               <div
@@ -482,7 +487,7 @@ export default function Home() {
                   alt={country.name}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/30 to-transparent"></div>
                 <div className="absolute inset-0 flex flex-col justify-center items-center p-4">
                   <div
                     className={`text-4xl mb-2 animate-float font-black ${country.flagClass}`}
@@ -527,8 +532,8 @@ export default function Home() {
                   Secure & Reliable
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Your documents and personal information are handled with
-                  utmost security
+                  Your documents and deformations are handled with utmost
+                  security
                 </p>
               </div>
               <div className="text-center p-8 rounded-2xl bg-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 animate-fade-in-up animate-delay-200 hover-glow">
@@ -550,7 +555,7 @@ export default function Home() {
                   Proven Track Record
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Thousands of successful visa applications and happy travelers
+                  Thousands of successful applications and happy travelers
                 </p>
               </div>
             </div>
@@ -655,6 +660,12 @@ export default function Home() {
                     <option value="thailand">Thailand</option>
                     <option value="vietnam">Vietnam</option>
                     <option value="indonesia">Indonesia</option>
+                    <option value="iran">Iran</option>
+                    <option value="tajikistan">Tajikistan</option>
+                    <option value="mayanmar">Mayanmar</option>
+                    <option value="rwanda">Rwanda</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="zimbabwe">Zimbabwe</option>
                     <option value="singapore">Singapore</option>
                     <option value="uzbekistan">Uzbekistan</option>
                     <option value="schengen">Schengen Countries</option>
@@ -792,14 +803,13 @@ export default function Home() {
         </div>
 
         <div className="container-custom">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 animate-fade-in-up">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 animate-fade-in-up">
             <div className="animate-fade-in-left">
               <h3 className="text-3xl font-black mb-6 gradient-text">
                 Crown International Travels
               </h3>
               <p className="text-gray-300 mb-6 text-lg leading-relaxed">
-                Your trusted partner for expert travel services and visa
-                processing worldwide.
+                Your trusted partner for expert travel services worldwide.
               </p>
               <div className="flex space-x-6">
                 <div
@@ -844,7 +854,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="animate-fade-in-up animate-delay-200">
+            {/* <div className="animate-fade-in-up animate-delay-200">
               <h4 className="text-xl font-bold mb-6 text-[var(--color-primary1)]">
                 Quick Links
               </h4>
@@ -925,7 +935,7 @@ export default function Home() {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
             <div className="animate-fade-in-right animate-delay-400">
               <h4 className="text-xl font-bold mb-6 text-[var(--color-primary1)]">
