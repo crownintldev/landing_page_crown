@@ -328,7 +328,7 @@ export default function Home() {
                       {country.name}
                     </h3>
                     <p className="text-white/90 text-xl font-medium drop-shadow-md">
-                      Tashkent - Discover the Silk Road
+                      {country.capital}
                     </p>
                   </div>
                 </div>
