@@ -30,6 +30,7 @@ import indonesiaBg from "@/images/indonesia_bg.png";
 import singaporeBg from "@/images/singapore_bg.png";
 import uzbekistanBg from "@/images/uzbekistan_bg.png";
 import heroImage from "@/images/hero_image.jpg";
+import FloatingButtons from "@/components/common/FloatingButtons";
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -130,6 +131,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
+      <FloatingButtons />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-black/80 via-black/60 to-black/40">
         <div
@@ -368,9 +370,9 @@ export default function Home() {
                   <h3 className="text-white text-4xl font-bold mb-3 drop-shadow-lg">
                     Singapore
                   </h3>
-                  <p className="text-white/90 text-xl font-medium drop-shadow-md">
+                  {/* <p className="text-white/90 text-xl font-medium drop-shadow-md">
                     Marina Bay - Lion City
-                  </p>
+                  </p> */}
                 </div>
               </div>
               <div className="absolute top-6 right-6 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -389,9 +391,9 @@ export default function Home() {
                   <h3 className="text-white text-4xl font-bold mb-3 drop-shadow-lg">
                     Uzbekistan
                   </h3>
-                  <p className="text-white/90 text-xl font-medium drop-shadow-md">
+                  {/* <p className="text-white/90 text-xl font-medium drop-shadow-md">
                     Tashkent - Capital of Silk Road
-                  </p>
+                  </p> */}
                 </div>
               </div>
               <div className="absolute top-6 right-6 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
