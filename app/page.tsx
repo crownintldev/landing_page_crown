@@ -162,7 +162,7 @@ export default function Home() {
                 className="btn-primary text-lg px-10 py-5 hover-glow"
                 onClick={() =>
                   window.open(
-                    "https://wa.me/crowninternationaltravels",
+                    "https://wa.me/923195000666",
                     "_blank"
                   )
                 }
@@ -340,7 +340,7 @@ export default function Home() {
             <button
               className="btn-primary text-xl px-12 py-5 hover-glow"
               onClick={() =>
-                window.open("https://wa.me/crowninternationaltravels", "_blank")
+                window.open("https://wa.me/923195000666", "_blank")
               }
             >
               Get Details
@@ -406,7 +406,7 @@ export default function Home() {
             <button
               className="btn-primary text-xl px-12 py-5 hover-glow"
               onClick={() =>
-                window.open("https://wa.me/crowninternationaltravels", "_blank")
+                window.open("https://wa.me/923195000666", "_blank")
               }
             >
               Get Details
@@ -509,7 +509,7 @@ export default function Home() {
             <button
               className="btn-primary text-xl px-12 py-5 hover-glow"
               onClick={() =>
-                window.open("https://wa.me/crowninternationaltravels", "_blank")
+                window.open("https://wa.me/923195000666", "_blank")
               }
             >
               Get Details
@@ -835,7 +835,7 @@ export default function Home() {
                   className="w-12 h-12 bg-gradient-to-br from-[var(--color-primary4)] to-[var(--color-primary7)] rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 cursor-pointer hover-glow"
                   onClick={() =>
                     window.open(
-                      "https://wa.me/crowninternationaltravels",
+                      "https://wa.me/923195000666",
                       "_blank"
                     )
                   }

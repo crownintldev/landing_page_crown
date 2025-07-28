@@ -1,14 +1,14 @@
 "use client";
 
 import { Phone, MessageCircle } from "lucide-react";
-
+import { FaWhatsapp } from "react-icons/fa";
 export default function FloatingButtons() {
   const handleWhatsAppClick = () => {
     // Using the main UAN number for WhatsApp
     const phoneNumber = "+923195000666";
     const message =
       "Hello! I would like to inquire about your travel services.";
-    const whatsappUrl = `https://wa.me/crowninternationaltravels`;
+    const whatsappUrl = `https://wa.me/923195000666`;
     window.open(whatsappUrl, "_blank");
   };
 
@@ -20,7 +20,7 @@ export default function FloatingButtons() {
   return (
     <>
       {/* WhatsApp Button - Right Side */}
-      <div className="fixed right-6 bottom-6 z-50">
+      <div className="fixed right-6 bottom-12 z-50">
         <button
           onClick={handleWhatsAppClick}
           className="group bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-110 animate-pulse-glow"
@@ -29,7 +29,12 @@ export default function FloatingButtons() {
           }}
           aria-label="Contact us on WhatsApp"
         >
-          <MessageCircle className="w-7 h-7 group-hover:scale-110 transition-transform duration-300" />
+          <FaWhatsapp
+            size={30}
+            color="green"
+            className="w-7 h-7 group-hover:scale-110 transition-transform duration-300"
+          />
+          {/* <MessageCircle className="w-7 h-7 group-hover:scale-110 transition-transform duration-300" /> */}
 
           {/* Tooltip */}
           {/* <div className="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-3 py-2 rounded-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
@@ -40,7 +45,7 @@ export default function FloatingButtons() {
       </div>
 
       {/* Call Button - Left Side */}
-      <div className="fixed left-6 bottom-6 z-50">
+      <div className="fixed left-6 bottom-12 z-50">
         <button
           onClick={handleCallClick}
           className="group bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-110 animate-pulse-glow"
