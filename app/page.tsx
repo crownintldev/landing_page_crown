@@ -171,7 +171,7 @@ export default function Home() {
               </button>
               <button
                 className="btn-secondary text-lg px-10 py-5 hover-glow"
-                onClick={() => (window.location.href = "tel:+923135000666")} // Replace with the actual phone number
+                onClick={() => (window.location.href = "tel:+923195000666")} // Replace with the actual phone number
               >
                 Contact Us
               </button>
@@ -776,10 +776,9 @@ export default function Home() {
                 Phone Numbers
               </h3>
               <div className="text-gray-600 text-sm space-y-1">
-                <p>+92 51 111 143 111 (UAN)</p>
-                <p>+92 313 5000 666 (UAN)</p>
-                <p>+92 51 5511 155/56-57</p>
-                <p>+92 21 35244461/62</p>
+                <p>+92 319 5000666</p>
+                {/* <p>+92 51 5511 155/56-57</p> */}
+                {/* <p>+92 21 35244461/62</p> */}
               </div>
             </div>
 
@@ -955,7 +954,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center group">
                   <Phone className="w-6 h-6 mr-3 text-[var(--color-primary4)] group-hover:scale-110 transition-transform duration-300" />
-                  <span className="text-sm">+92 51 111 143 111</span>
+                  <span className="text-sm">+92 319 5000666</span>
                 </div>
                 <div className="flex items-center group">
                   <Mail className="w-6 h-6 mr-3 text-[var(--color-primary4)] group-hover:scale-110 transition-transform duration-300" />

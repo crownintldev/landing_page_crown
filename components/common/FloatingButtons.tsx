@@ -5,7 +5,7 @@ import { Phone, MessageCircle } from "lucide-react";
 export default function FloatingButtons() {
   const handleWhatsAppClick = () => {
     // Using the main UAN number for WhatsApp
-    const phoneNumber = "+923135000666";
+    const phoneNumber = "+923195000666";
     const message =
       "Hello! I would like to inquire about your travel services.";
     const whatsappUrl = `https://wa.me/crowninternationaltravels`;
@@ -14,7 +14,7 @@ export default function FloatingButtons() {
 
   const handleCallClick = () => {
     // Using the main UAN number for calls
-    window.location.href = "tel:+923135000666";
+    window.location.href = "tel:+923195000666";
   };
 
   return (
