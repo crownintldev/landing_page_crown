@@ -353,7 +353,7 @@ export default function Home() {
         <div className="container-custom">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="heading-secondary">
-              Also Offering Authorised Services for{" "}
+              We Assist with application support for travel to{" "}
               <span className="gradient-text">Visiting</span>:
             </h2>
           </div>
@@ -426,12 +426,12 @@ export default function Home() {
         <div className="container-custom">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="heading-secondary">
-              We're Well Experienced in{" "}
-              <span className="gradient-text">File Processing</span> for:
+              We offer expert{" "}
+              <span className="gradient-text">travel consultation</span> for:
+          
             </h2>
             <p className="text-primary text-xl">
-              Expert handling of complex applications & files for premium
-              destinations
+                complex documentation requirements to destinations.
             </p>
           </div>
 
@@ -480,9 +480,8 @@ export default function Home() {
             ].map((country, index) => (
               <div
                 key={index}
-                className={`relative overflow-hidden rounded-2xl shadow-xl text-center hover:shadow-2xl transition-all duration-500 hover:scale-105 hover-glow animate-scale-in animate-delay-${
-                  (index + 1) * 100
-                } h-48 group`}
+                className={`relative overflow-hidden rounded-2xl shadow-xl text-center hover:shadow-2xl transition-all duration-500 hover:scale-105 hover-glow animate-scale-in animate-delay-${(index + 1) * 100
+                  } h-48 group`}
               >
                 <img
                   src={country.image}
@@ -522,7 +521,7 @@ export default function Home() {
         <div className="container-custom">
           <div className="max-w-5xl mx-auto text-center animate-fade-in-up">
             <h2 className="heading-secondary">
-              Your Trusted <span className="gradient-text">Travel Partner</span>
+              Your <span className="gradient-text">Travel Partner</span>
             </h2>
             <p className="text-primary text-2xl leading-relaxed mb-16 font-light">
               As a full-service Travel Agency, We're specialized in overall
@@ -539,7 +538,7 @@ export default function Home() {
                   Secure & Reliable
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Your documents and deformations are handled with utmost
+                  Your documents and informations are handled with utmost
                   security
                 </p>
               </div>
@@ -579,7 +578,7 @@ export default function Home() {
                 Send Your <span className="gradient-text">Query</span>
               </h2>
               <p className="text-primary text-xl">
-                Get in touch with our travel experts for personalized assistance
+                Get in touch with our travel experts.
               </p>
             </div>
 
