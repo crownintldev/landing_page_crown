@@ -33,7 +33,7 @@ export default function RootLayout({
       className={`scroll-smooth ${poppins.variable} ${playfair.variable}`}
     >
       <body className={poppins.className}>
-        <Header />
+        {/* <Header /> */}
         {children}
         <Footer />
         {/* <Footer /> */}

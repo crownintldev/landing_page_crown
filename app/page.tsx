@@ -155,7 +155,7 @@ export default function Home() {
               <span className="gradient-text">(Pvt) Ltd</span>
             </h1>
             <p className="text-xl md:text-2xl mb-12 opacity-90 font-light leading-relaxed animate-fade-in-up animate-delay-300">
-              Your gateway to the world - Expert travel services
+            Pakistan's Best Recommended Travel
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in-up animate-delay-400">
               <button
@@ -243,10 +243,11 @@ export default function Home() {
         <div className="container-custom">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="heading-secondary">
-              We're Officially <span className="gradient-text">Authorised</span>{" "}
-              Application Processing Centre for:
+              We provide <span className="gradient-text">Application Assistance</span> services for:
+              {/* We're Officially <span className="gradient-text">Authorised</span>{" "}
+              Application Processing Centre for: */}
             </h2>
-            <p className="text-primary text-xl">Trusted Process Within Time</p>
+            <p className="text-primary text-xl">Processing Within Time</p>
           </div>
 
           {/* Desktop Carousel */}
@@ -353,8 +354,8 @@ export default function Home() {
         <div className="container-custom">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="heading-secondary">
-              We Assist with application support for travel to{" "}
-              <span className="gradient-text">Visiting</span>:
+              We assist with  <span className="gradient-text">Application Support</span> for travel to:
+              {/* <span className="gradient-text">Visiting</span> */}
             </h2>
           </div>
 
@@ -427,7 +428,7 @@ export default function Home() {
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="heading-secondary">
               We offer expert{" "}
-              <span className="gradient-text">travel consultation</span> for:
+              <span className="gradient-text">Travel Consultation</span> for:
           
             </h2>
             <p className="text-primary text-xl">

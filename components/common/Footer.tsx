@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
+import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-br from-[var(--color-primary6)] via-gray-900 to-[var(--color-primary6)] text-white py-20 relative overflow-hidden">
@@ -18,7 +19,7 @@ const Footer = () => {
               Crown International Travels
             </h3>
             <p className="text-gray-300 mb-6 text-lg leading-relaxed">
-              Your trusted partner for expert travel services worldwide.
+              Your partner for expert travel services worldwide.
             </p>
             <div className="flex space-x-6">
               <div
@@ -84,7 +85,13 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-16 pt-12 text-center text-gray-300 animate-fade-in-up animate-delay-600">
           <p className="text-lg">
             &copy; 2024 Crown International Travels (Pvt) Ltd. All rights
-            reserved. | Privacy Policy | Terms of Service
+            reserved. | Privacy Policy | Terms of Service |  <Link
+                                
+                                href={'/disclaimer'}
+                               
+                            >
+                                Disclaimer
+                            </Link>
           </p>
         </div>
       </div>
