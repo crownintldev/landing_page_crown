@@ -155,7 +155,7 @@ export default function Home() {
               <span className="gradient-text">(Pvt) Ltd</span>
             </h1>
             <p className="text-xl md:text-2xl mb-12 opacity-90 font-light leading-relaxed animate-fade-in-up animate-delay-300">
-            Pakistan's Best Recommended Travel
+            Pakistan's Best Recommended Travel Agency
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in-up animate-delay-400">
               <button
